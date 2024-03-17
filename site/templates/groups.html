@@ -1,0 +1,29 @@
+{% macro render_groups(groups) %}
+  {% for group in groups %}
+    {% set group_section = get_section(path=group.path) %}
+    {% if group_section %}
+      <div class="{{ group.background_color | default(value='bg-white') }} mb-4 md:mb-6 rounded-lg shadow">
+        <div class="{{ group.title_bar_color | default(value='bg-gray-500') }} rounded-t-lg px-2 py-1">
+          <p class="font-semibold text-white text-base">{{ group_section.title }}</p>
+        </div>
+        <div class="p-4 space-y-4">
+          {% for page in group_section.pages %}
+            <div class="flex justify-between items-center">
+              <a href="{{ page.extra.linkURL }}" target="_blank" rel="noopener noreferrer" title="{{ page.extra.description | default(value='', strict=true) }}" class="text-md font-medium text-gray-900 hover:text-orange-500 hover:underline">{{ page.title }}</a>
+              <div class="flex items-center space-x-2">
+                {% if page.extra.additionalLinks %}
+                  {% for link in page.extra.additionalLinks %}
+                    <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" title="{{ link.tooltip }}">
+                      <img src="{{ link.icon }}" alt="{{ link.tooltip }}" class="h-4 w-4">
+                    </a>
+                  {% endfor %}
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+

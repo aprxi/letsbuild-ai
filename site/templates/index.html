@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% import "groups.html" as groups %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-to-r from-gray-900 to-gray-800">
+  <div class="text-white py-4">
+    <div class="flex justify-center items-center">
+      <div class="text-center">
+        <img src="/images/logo.png" alt="LetsBuild.AI Logo" class="mx-auto h-32 mb-4">
+        <h1 class="text-3xl font-bold mb-2">Let's Build AI</h1>
+        <p class="mb-4">A community-driven platform for AI enthusiasts.</p>
+        <a href="https://github.com/aprxi/letsbuild-ai" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Contribute on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+  {% set group_data = load_data(path="etc/categories.json") %}
+
+  <div class="flex justify-center">
+    <div class="grid grid-cols-2 gap-x-4 md:grid-cols-4 md:gap-x-6 max-w-4xl">
+      <div>
+        {{ groups::render_groups(groups=group_data.column1) }}
+      </div>
+      <div>
+        {{ groups::render_groups(groups=group_data.column2) }}
+      </div>
+      <div>
+        {{ groups::render_groups(groups=group_data.column3) }}
+      </div>
+      <div>
+        {{ groups::render_groups(groups=group_data.column4) }}
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-center mt-12">
+    <div class="py-4 text-white text-center max-w-4xl w-full">
+      <p>Edit this site on <a href="https://github.com/aprxi/letsbuild-ai" target="_blank" class="underline">GitHub</a>. Your contributions are welcome!</p>
+      <p class="mt-2">Letsbuild.ai does not use cookies and does not collect any personal data.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+{% endblock content %}
+

@@ -1,0 +1,49 @@
+# IDEs
+.vscode
+.idea
+
+# Mac/OSX
+.DS_Store
+
+# cache files
+.cache
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.pyc
+*.lock
+package-lock.json
+
+
+# auto-generated
+*/style/output.css
+
+target/
+
+# virtenv
+venv/
+
+# environment variables
+.env*
+
+# dat files (too large for github)
+*.dat
+
+# temporary files
+*/temp/
+tmp/
+
+# temp build dir
+build/
+# archive/
+dist/
+pkg/
+**/public/
+
+
+
+# history
+.bash_history
+.python_history
+
+node_modules/

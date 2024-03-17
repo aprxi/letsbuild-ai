@@ -1,0 +1,29 @@
+{
+  "column1": [
+    { "path": "models/_index.md", "title_bar_color": "bg-blue-600", "background_color": "bg-blue-50" },
+    { "path": "command-line-tools/_index.md", "title_bar_color": "bg-green-600", "background_color": "bg-green-50" },
+    { "path": "developer-tools/_index.md", "title_bar_color": "bg-red-600", "background_color": "bg-red-50" },
+    { "path": "model-development/_index.md", "title_bar_color": "bg-indigo-600", "background_color": "bg-indigo-50" },
+    { "path": "model-infra/_index.md", "title_bar_color": "bg-yellow-600", "background_color": "bg-yellow-50" }
+  ],
+  "column2": [
+    { "path": "vector-databases/_index.md", "title_bar_color": "bg-pink-600", "background_color": "bg-pink-50" },
+    { "path": "private-data/_index.md", "title_bar_color": "bg-yellow-600", "background_color": "bg-yellow-50" },
+    { "path": "llm-automation/_index.md", "title_bar_color": "bg-teal-600", "background_color": "bg-teal-50" },
+    { "path": "model-monitoring/_index.md", "title_bar_color": "bg-red-600", "background_color": "bg-red-50"}
+  ],
+  "column3": [
+    { "path": "autonomous-agents/_index.md", "title_bar_color": "bg-indigo-600", "background_color": "bg-indigo-50" },
+    { "path": "ai-assistants/_index.md", "title_bar_color": "bg-green-600", "background_color": "bg-green-50" },
+    { "path": "workflow-automation/_index.md", "title_bar_color": "bg-pink-600", "background_color": "bg-pink-50"},
+    { "path": "chatgpt-prompts/_index.md", "title_bar_color": "bg-teal-600", "background_color": "bg-teal-50" },
+    { "path": "reading/_index.md", "title_bar_color": "bg-blue-600", "background_color": "bg-blue-50" }
+  ],
+  "column4": [
+    { "path": "tutorials/_index.md", "title_bar_color": "bg-purple-600", "background_color": "bg-purple-50" },
+    { "path": "playground/_index.md", "title_bar_color": "bg-gray-600", "background_color": "bg-gray-50" },
+    { "path": "cloud-providers/_index.md", "title_bar_color": "bg-red-600", "background_color": "bg-red-50" },
+    { "path": "image-generation/_index.md", "title_bar_color": "bg-indigo-600", "background_color": "bg-indigo-50" },
+    { "path": "people/_index.md", "title_bar_color": "bg-green-600", "background_color": "bg-green-50" }
+  ]
+}
