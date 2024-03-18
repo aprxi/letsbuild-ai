@@ -4,18 +4,12 @@ module.exports = {
     "./site/templates/**/*.html",
     "./site/content/**/*.md",
     "./site/static/**/*.html",
-    "./site/data/**/*.json",
-    // Add any other paths that might contain Tailwind classes
+    "./site/etc/**/*.json",
   ],
   theme: {
     extend: {
-      colors: {
-        'brand-blue': '#007bff',
-        // Other custom colors
-      },
-      fontFamily: {
+     fontFamily: {
         sans: ['Inter', 'sans-serif'],
-        // Other custom fonts
       },
     },
   },
