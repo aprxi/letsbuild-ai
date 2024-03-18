@@ -1,6 +1,6 @@
 +++
 title = "ZenML"
-weight = 20
+weight = 60
 [extra]
 linkURL = "https://zenml.io/"
 description = "ZenML let's you create MLOps/LLMOps workflows that run on any infrastructure backend."
