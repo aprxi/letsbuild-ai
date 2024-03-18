@@ -714,4 +714,9 @@ video {
     -moz-column-gap: 1.5rem;
          column-gap: 1.5rem;
   }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
