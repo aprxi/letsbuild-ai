@@ -1,5 +1,5 @@
 +++
-title = "Apple MLX"
+title = "MLX"
 weight = 60
 [extra]
 linkURL = "https://github.com/ml-explore/mlx"
