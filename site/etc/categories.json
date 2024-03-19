@@ -28,6 +28,7 @@
     { "path": "cloud-providers/_index.md", "title_bar_color": "bg-blue-600", "background_color": "bg-blue-50" },
     { "path": "image-generation/_index.md", "title_bar_color": "bg-orange-600", "background_color": "bg-orange-50" },
     { "path": "people/_index.md", "title_bar_color": "bg-purple-600", "background_color": "bg-purple-50" }
+    { "path": "no-sql-databases/_index.md", "title_bar_color": "bg-purple-600", "background_color": "bg-purple-50" },
   ]
 }
 
