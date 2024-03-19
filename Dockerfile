@@ -25,7 +25,6 @@ WORKDIR /usr/src/app
 
 # install npm packages
 COPY package.json ./
-# COPY package-lock.json ./
 RUN npm install
 
 COPY . .

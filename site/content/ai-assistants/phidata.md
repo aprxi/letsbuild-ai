@@ -1,6 +1,6 @@
 +++
 title = "Phidata"
-weight = 20
+weight = 60
 [extra]
 linkURL = "https://www.phidata.com"
 description = "Phdiata is a toolkit for building AI Assistants using function calling."
