@@ -1,5 +1,5 @@
 +++
-title = "MoAIJobs"
+title = "Jobs in AI"
 weight = 50
 [extra]
 linkURL = "https://www.moaijobs.com/"
