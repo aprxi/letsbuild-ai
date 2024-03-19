@@ -19,7 +19,8 @@
     { "path": "workflow-automation/_index.md", "title_bar_color": "bg-pink-600", "background_color": "bg-pink-50" },
     { "path": "chatgpt-prompts/_index.md", "title_bar_color": "bg-blue-600", "background_color": "bg-blue-50" },
     { "path": "reading/_index.md", "title_bar_color": "bg-orange-600", "background_color": "bg-orange-50" },
-    { "path": "webui-llms/_index.md", "title_bar_color": "bg-purple-600", "background_color": "bg-purple-50" }
+    { "path": "webui-llms/_index.md", "title_bar_color": "bg-purple-600", "background_color": "bg-purple-50" },
+    { "path": "localui-llms/_index.md", "title_bar_color": "bg-pink-600", "background_color": "bg-pink-50" }
   ],
   "column4": [
     { "path": "tutorials/_index.md", "title_bar_color": "bg-pink-600", "background_color": "bg-pink-50" },
