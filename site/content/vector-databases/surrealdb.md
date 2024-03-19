@@ -1,0 +1,1 @@
++++ title = "SurrealDB" weight = 30 [extra] linkURL = "https://surrealdb.com/" description = "The Multi-modal Database for AI world" additionalLinks = [ { url = "https://github.com/surrealdb/surrealdb", icon = "/icons/github.svg", tooltip = "GitHub Repository" }, { url = "https://surrealdb.com/docs/surrealdb/", icon = "/icons/documentation.svg", tooltip = "Documentation" }, ] +++
