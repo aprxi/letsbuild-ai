@@ -1,4 +1,4 @@
 +++
-title = "WebUI for LLMs"
+title = "Jobs"
 sort_by = "weight"
 +++
