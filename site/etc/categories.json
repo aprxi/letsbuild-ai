@@ -7,6 +7,7 @@
     { "path": "model-infra/_index.md", "title_bar_color": "bg-pink-600", "background_color": "bg-pink-50" }
   ],
   "column2": [
+    { "path": "RAG-platforms/_index.md", "title_bar_color": "bg-orang-600", "background_color": "bg-purple-50"}
     { "path": "vector-databases/_index.md", "title_bar_color": "bg-purple-600", "background_color": "bg-purple-50" },
     { "path": "private-data/_index.md", "title_bar_color": "bg-orange-600", "background_color": "bg-orange-50" },
     { "path": "llm-automation/_index.md", "title_bar_color": "bg-blue-600", "background_color": "bg-blue-50" },
