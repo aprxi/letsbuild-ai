@@ -1,0 +1,8 @@
+{
+  "column1": [
+    { "path": "image-generation/web-ui/_index.md", "title_bar_color": "bg-blue-600", "background_color": "bg-blue-50" }
+  ],
+  "column2": [
+    { "path": "image-generation/models/_index.md", "title_bar_color": "bg-pink-600", "background_color": "bg-pink-50" }
+  ]
+}

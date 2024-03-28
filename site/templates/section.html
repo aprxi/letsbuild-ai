@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% import "columns.html" as columns %}
+
+{% block content %}
+  {% set relative_path = section.relative_path | replace(from="_index.md", to="") %}
+  {% set column_data = load_data(path="content/" ~ relative_path ~ "categories.json", required=false) %}
+
+  {% if column_data %}
+    <div class="flex justify-center">
+      {{ columns::render_columns(columns=column_data)}}
+    </div>
+  {% endif %}
+{% endblock content %}
