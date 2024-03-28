@@ -4,6 +4,6 @@
 {% block content %}
   {% set column_data = load_data(path="etc/categories.json") %}
   <div class="flex justify-center">
-    {{ columns::render_columns(columns=column_data, max_items_per_group=10) }}
+    {{ columns::render_columns(columns=column_data, max_items_per_group=5) }}
   </div>
 {% endblock content %}
