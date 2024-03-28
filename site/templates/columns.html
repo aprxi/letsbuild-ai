@@ -1,0 +1,26 @@
+{% import "groups.html" as groups %}
+
+{% macro render_columns(columns, max_items_per_group=0) %}
+  <div class="grid grid-cols-2 gap-x-4 md:grid-cols-4 md:gap-x-6 max-w-4xl">
+    {% if columns.column1 %}
+    <div>
+      {{ groups::render_groups(groups=columns.column1, max_items_per_group=max_items_per_group) }}
+    </div>
+    {% endif %}
+    {% if columns.column2 %}
+    <div>
+      {{ groups::render_groups(groups=columns.column2, max_items_per_group=max_items_per_group) }}
+    </div>
+    {% endif %}
+    {% if columns.column3 %}
+    <div>
+      {{ groups::render_groups(groups=columns.column3, max_items_per_group=max_items_per_group) }}
+    </div>
+    {% endif %}
+    {% if columns.column4 %}
+    <div>
+      {{ groups::render_groups(groups=columns.column4, max_items_per_group=max_items_per_group) }}
+    </div>
+    {% endif %}
+  </div>
+{% endmacro %}

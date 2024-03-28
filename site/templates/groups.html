@@ -1,4 +1,4 @@
-{% macro render_groups(groups) %}
+{% macro render_groups(groups, max_items_per_group=0) %}
   {% for group in groups %}
     {% set group_section = get_section(path=group.path) %}
     {% if group_section %}
@@ -7,7 +7,13 @@
           <p class="font-semibold text-white text-base">{{ group_section.title }}</p>
         </div>
         <div class="p-4 space-y-4">
-          {% for page in group_section.pages %}
+          {% set pages = group_section.pages %}
+          {% if max_items_per_group > 0 %}
+            {% set pages_length = pages | length %}
+            {% set show_more_link = pages_length > max_items_per_group %}
+            {% set pages = pages | slice(end=max_items_per_group) %}
+          {% endif %}
+          {% for page in pages %}
             <div class="flex justify-between items-center">
               <a href="{{ page.extra.linkURL }}" target="_blank" rel="noopener noreferrer" title="{{ page.extra.description | default(value='', strict=true) }}" class="text-md font-medium text-gray-900 hover:text-orange-500 hover:underline">{{ page.title }}</a>
               <div class="flex items-center space-x-2">
@@ -21,6 +27,11 @@
               </div>
             </div>
           {% endfor %}
+          {% if show_more_link %}
+            <div class="flex justify-between items-center">
+              <a href="{{ group_section.path }}" title="More Resources for {{ group_section.title }}" class="text-md font-medium text-gray-900 hover:text-orange-500 hover:underline">More...</a>
+            </div>
+          {% endif %}
         </div>
       </div>
     {% endif %}
